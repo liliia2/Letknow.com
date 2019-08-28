@@ -3026,6 +3026,8 @@ body.mobile * {
         @media screen and (max-width: 500px) {
           .section14 .content-wrapper .left .reg-text {
             font-size: 14px; } }
+        .section14 .content-wrapper .left .reg-text a:visited {
+          color: #0064aa; }
 
 .footer {
   border-top: 1px solid #d8d8d8;
