@@ -585,6 +585,13 @@ body.mobile * {
             display: flex;
             flex-direction: row;
             margin-bottom: 70px; }
+            .main-wrapper .section1 .content-wrapper .slide1 .text-wrapper .text-item .nav-wrapper :hover,
+            .main-wrapper .section1 .content-wrapper .slide2 .text-wrapper .text-item .nav-wrapper :hover,
+            .main-wrapper .section1 .content-wrapper .slide3 .text-wrapper .text-item .nav-wrapper :hover,
+            .main-wrapper .section1 .content-wrapper .slide4 .text-wrapper .text-item .nav-wrapper :hover,
+            .main-wrapper .section1 .content-wrapper .slide5 .text-wrapper .text-item .nav-wrapper :hover,
+            .main-wrapper .section1 .content-wrapper .slide6 .text-wrapper .text-item .nav-wrapper :hover {
+              cursor: pointer; }
             @media screen and (max-width: 830px) {
               .main-wrapper .section1 .content-wrapper .slide1 .text-wrapper .text-item .nav-wrapper,
               .main-wrapper .section1 .content-wrapper .slide2 .text-wrapper .text-item .nav-wrapper,
@@ -3019,31 +3026,6 @@ body.mobile * {
         @media screen and (max-width: 500px) {
           .section14 .content-wrapper .left .reg-text {
             font-size: 14px; } }
-    .section14 .content-wrapper .right {
-      display: flex;
-      align-self: flex-end; }
-      @media screen and (max-width: 830px) {
-        .section14 .content-wrapper .right {
-          align-self: flex-start;
-          margin-top: 30px; } }
-      .section14 .content-wrapper .right .create-btn {
-        width: 158px;
-        height: 44px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 22px;
-        background-image: linear-gradient(181deg, #0064aa 0%, #00beff 250%);
-        box-shadow: 0 9px 34px 0 rgba(5, 48, 95, 0.32);
-        cursor: pointer; }
-        .section14 .content-wrapper .right .create-btn p {
-          color: white;
-          font-size: 14px;
-          font-family: "Roboto-Medium"; }
-        .section14 .content-wrapper .right .create-btn:hover {
-          background-image: none;
-          background-color: #0064aa;
-          box-shadow: 0px 4px 10px 0px rgba(5, 48, 95, 0.45); }
 
 .footer {
   border-top: 1px solid #d8d8d8;
@@ -3267,6 +3249,12 @@ body {
   top: 92px;
   width: 100%;
   z-index: 10; }
+
+.blur {
+  filter: blur(5px); }
+
+.without-blur {
+  filter: none; }
 
 .section1-hide {
   opacity: 0 !important;
