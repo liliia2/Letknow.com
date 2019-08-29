@@ -403,20 +403,20 @@
 
       .illustration-item {
         position: absolute;
-        max-height: 580px;
+        max-height: 620px;
         width: 100%;
         max-width: 1660px;
         top: 0;
         bottom: 0;
         margin: auto;
         @media screen and (max-width: 1620px) {
-          width: 1420px;
+          width: 1440px;
         }
         @media screen and (max-width: 1420px) {
-          width: 1200px;
+          width: 1240px;
         }
         @media screen and (max-width: 1200px) {
-          width: 1000px;
+          width: 980px;
         }
       }
 
@@ -457,13 +457,13 @@
           width: 800px;
           background-size: contain;
           @media screen and (max-width: 1620px) {
-            width: 720px;
+            width: 760px;
           }
           @media screen and (max-width: 1420px) {
-            width: 640px;
+            width: 680px;
           }
           @media screen and (max-width: 1200px) {
-            width: 460px;
+            width: 500px;
           }
           @media screen and (max-width: 830px) {
             background: none;
@@ -486,7 +486,7 @@
             right: 0;
             max-height: 350px;
             height: 100%; 
-            width: 90%;   
+            width: 100%;   
             background-size: contain;
             margin-right: 5%;
             @media screen and (max-width: 500px) {
@@ -989,14 +989,32 @@
         margin-left: 0 !important;
       }
 
-      .slick-before-change .bg-object {
-        transition: 1s;
+      .slide1 .slick-before-change .bg-object,
+      .slide3 .slick-before-change .bg-object,
+      .slide5 .slick-before-change .bg-object {
+        transition: 0.5s;
         right: -5% !important;
       }
 
-      .slick-before-change .main-object {
-        transition: 1s;
+      .slide1 .slick-before-change .main-object,
+      .slide3 .slick-before-change .main-object,
+      .slide5 .slick-before-change .main-object {
+        transition: 0.5s;
         right: 5% !important;
+      }
+
+      .slide2 .slick-before-change .bg-object,
+      .slide4 .slick-before-change .bg-object,
+      .slide6 .slick-before-change .bg-object {
+        transition: 0.5s;
+        right: 0 !important;
+      }
+
+      .slide2 .slick-before-change .main-object,
+      .slide4 .slick-before-change .main-object,
+      .slide6 .slick-before-change .main-object {
+        transition: 0.5s;
+        right: -5% !important;
       }
 
       .slick-before-change .tablet {
