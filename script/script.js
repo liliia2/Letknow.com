@@ -184,9 +184,15 @@ $(document).ready(function () {
         if (scrolled >= 200) {
             $(".header-wrapper").removeClass("static");
             $(".header-wrapper").addClass("active");
+
+            $(".mobile-block-header").removeClass("static");
+            $(".mobile-block-header").addClass("active");
         } else {
             $(".header-wrapper").removeClass("active");
             $(".header-wrapper").addClass("static");
+
+            $(".mobile-block-header").removeClass("active");
+            $(".mobile-block-header").addClass("static");
         }
 
     }

@@ -6,11 +6,17 @@
   position: fixed;
   left: 0;
   top: 0;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   height: 60px;
-  z-index: 20;
-  box-shadow: 0 2px 12px 0 rgba(231, 240, 246, 0.85)
+  z-index: 21;
+  box-shadow: 0 2px 12px 0 rgba(231, 240, 246, 0.85);
+  &.static {
+    opacity: 0;
+  }
+  &.active {
+    opacity: 0.95;
+  }
 }
 
 .header-placebo {
@@ -274,11 +280,12 @@
 
               @media screen and (max-width: 830px) {
                 order: 3;
-              }
-              @media screen and (max-width: 830px) {
                 justify-content: center;
-                margin-top: 60px;
+                margin-top: 18px;
                 margin-bottom: 0;
+              }
+              @media screen and (max-width: 360px) {
+                margin-top: 12px;
               }
 
               .current {
@@ -299,6 +306,7 @@
             }
 
             .h1-title {
+              padding-top: 0px;
               max-width: 340px;
               color: #212121;
               font-family: $fontM_M;
@@ -473,8 +481,13 @@
           background: url("../../img/Space-back.png") no-repeat 50% 50%;
           background-size: contain;
           margin-right: -5%;
-          @media screen and (max-width: 500px) {
-            background-size: 90% auto;        
+          @media screen and (max-width: 520px) {
+            min-height: 282px;
+            max-height: 282px;
+          }
+          @media screen and (max-width: 320px) {
+            min-height: 200px;
+            max-height: 200px;
           }
 
           .top-bg-tablet {
@@ -486,8 +499,13 @@
             width: 100%;   
             background-size: contain;
             margin-right: 5%;
-            @media screen and (max-width: 500px) {
-              background-size: 90% auto;        
+            @media screen and (max-width: 520px) {
+              min-height: 282px;
+              max-height: 282px;
+            }
+            @media screen and (max-width: 320px) {
+              min-height: 180px;
+              max-height: 180px;
             }
           }
 
@@ -576,13 +594,18 @@
           background-size: contain;
           margin-right: 0;
           min-height: 350px;
-          @media screen and (max-width: 500px) {
-            background-size: 90% auto;        
+          @media screen and (max-width: 520px) {
+            min-height: 282px;
+            max-height: 282px;
+          }
+          @media screen and (max-width: 320px) {
+            min-height: 180px;
+            max-height: 180px;
           }
 
           .top-bg-tablet {
             background: url("../../img/Trade-top.png") no-repeat 50% 50%;
-            position: inherit;
+            position: absolute;
             right: 0;
             min-height: 350px;
             max-height: 350px; 
@@ -590,8 +613,13 @@
             height: 100%;  
             background-size: contain;
             margin-right: -5%;
-            @media screen and (max-width: 500px) {
-              background-size: 90% auto;        
+            @media screen and (max-width: 520px) {
+              min-height: 282px;
+              max-height: 282px;
+            }
+            @media screen and (max-width: 320px) {
+              min-height: 180px;
+              max-height: 180px;
             }
           }
 
@@ -674,8 +702,13 @@
           background: url("../../img/Butler-back.png") no-repeat 50% 50%;
           background-size: contain;
           margin-right: -5%;
-          @media screen and (max-width: 500px) {
-            background-size: 90% auto;        
+          @media screen and (max-width: 520px) {
+            min-height: 282px;
+            max-height: 282px;     
+          }
+          @media screen and (max-width: 320px) {
+            min-height: 180px;
+            max-height: 180px;
           }
 
           .top-bg-tablet {
@@ -688,8 +721,13 @@
             width: 100%;   
             background-size: contain;
             margin-right: 5%;
-            @media screen and (max-width: 500px) {
-              background-size: 90% auto;        
+            @media screen and (max-width: 520px) {
+              min-height: 282px;
+              max-height: 282px;
+            }
+            @media screen and (max-width: 320px) {
+              min-height: 180px;
+              max-height: 180px;
             }
           }
 
@@ -773,8 +811,13 @@
           background: url("../../img/Pizza-back.png") no-repeat 50% 50%;
           background-size: contain;
           margin-right: 0;
-          @media screen and (max-width: 500px) {
-            background-size: 90% auto;        
+          @media screen and (max-width: 520px) {
+            min-height: 282px;
+            max-height: 282px;   
+          }
+          @media screen and (max-width: 320px) {
+            min-height: 180px;
+            max-height: 180px;
           }
 
           .top-bg-tablet {
@@ -787,8 +830,13 @@
             width: 100%;   
             background-size: contain;
             margin-right: -5%;
-            @media screen and (max-width: 500px) {
-              background-size: 90% auto;        
+            @media screen and (max-width: 520px) {
+              min-height: 282px;
+              max-height: 282px;      
+            }
+            @media screen and (max-width: 320px) {
+              min-height: 180px;
+              max-height: 180px;
             }
           }
 
@@ -870,8 +918,13 @@
           background: url("../../img/Mario-back.png") no-repeat 50% 50%;
           background-size: contain;
           margin-right: -5%;
-          @media screen and (max-width: 500px) {
-            background-size: 90% auto;        
+          @media screen and (max-width: 520px) {
+            min-height: 282px;
+            max-height: 282px;        
+          }
+          @media screen and (max-width: 320px) {
+            min-height: 180px;
+            max-height: 180px;
           }
 
           .top-bg-tablet {
@@ -884,8 +937,13 @@
             width: 100%;   
             background-size: contain;
             margin-right: 5%;
-            @media screen and (max-width: 500px) {
-              background-size: 90% auto;        
+            @media screen and (max-width: 520px) {
+              min-height: 282px;
+              max-height: 282px;        
+            }
+            @media screen and (max-width: 320px) {
+              min-height: 180px;
+              max-height: 180px;
             }
           }
 
@@ -948,8 +1006,13 @@
           background: url("../../img/Chucks-back.png") no-repeat 50% 50%;
           background-size: contain;
           margin-right: 0;
-          @media screen and (max-width: 500px) {
-            background-size: 90% auto;        
+          @media screen and (max-width: 520px) {
+            min-height: 282px;
+            max-height: 282px;      
+          }
+          @media screen and (max-width: 320px) {
+            min-height: 180px;
+            max-height: 180px;
           }
 
           .top-bg-tablet {
@@ -962,8 +1025,13 @@
             width: 100%;   
             background-size: contain;
             margin-right: -5%;
-            @media screen and (max-width: 500px) {
-              background-size: 90% auto;        
+            @media screen and (max-width: 520px) {
+              min-height: 282px;
+              max-height: 282px;       
+            }
+            @media screen and (max-width: 320px) {
+              min-height: 180px;
+              max-height: 180px;
             }
           }
 
@@ -3526,6 +3594,10 @@ body {
       justify-content: center;
       align-items: center;
     }
+
+    .logo-mob {
+      z-index: 101;
+    }
   }
 
   .center-block {
@@ -3609,6 +3681,9 @@ body {
     @media screen and (max-width: 800px) {
       max-height: 1000px;       
     }
+    @media screen and (max-width: 500px) {
+      max-height: 712px;       
+    }
   }
 }
 
@@ -3638,7 +3713,7 @@ body {
 
 .section1-copy {
   position: fixed;
-  top: 92px;
+  top: 38px;
   width: 100%;
   z-index: 10;
 }

@@ -317,14 +317,18 @@ body.mobile * {
   position: fixed;
   left: 0;
   top: 0;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   height: 60px;
-  z-index: 20;
+  z-index: 21;
   box-shadow: 0 2px 12px 0 rgba(231, 240, 246, 0.85); }
   @media screen and (max-width: 830px) {
     .mobile-block-header {
       display: block; } }
+  .mobile-block-header.static {
+    opacity: 0; }
+  .mobile-block-header.active {
+    opacity: 0.95; }
 
 .header-placebo {
   position: relative;
@@ -599,17 +603,18 @@ body.mobile * {
               .main-wrapper .section1 .content-wrapper .slide4 .text-wrapper .text-item .nav-wrapper,
               .main-wrapper .section1 .content-wrapper .slide5 .text-wrapper .text-item .nav-wrapper,
               .main-wrapper .section1 .content-wrapper .slide6 .text-wrapper .text-item .nav-wrapper {
-                order: 3; } }
-            @media screen and (max-width: 830px) {
+                order: 3;
+                justify-content: center;
+                margin-top: 18px;
+                margin-bottom: 0; } }
+            @media screen and (max-width: 360px) {
               .main-wrapper .section1 .content-wrapper .slide1 .text-wrapper .text-item .nav-wrapper,
               .main-wrapper .section1 .content-wrapper .slide2 .text-wrapper .text-item .nav-wrapper,
               .main-wrapper .section1 .content-wrapper .slide3 .text-wrapper .text-item .nav-wrapper,
               .main-wrapper .section1 .content-wrapper .slide4 .text-wrapper .text-item .nav-wrapper,
               .main-wrapper .section1 .content-wrapper .slide5 .text-wrapper .text-item .nav-wrapper,
               .main-wrapper .section1 .content-wrapper .slide6 .text-wrapper .text-item .nav-wrapper {
-                justify-content: center;
-                margin-top: 60px;
-                margin-bottom: 0; } }
+                margin-top: 12px; } }
             .main-wrapper .section1 .content-wrapper .slide1 .text-wrapper .text-item .nav-wrapper .current,
             .main-wrapper .section1 .content-wrapper .slide2 .text-wrapper .text-item .nav-wrapper .current,
             .main-wrapper .section1 .content-wrapper .slide3 .text-wrapper .text-item .nav-wrapper .current,
@@ -638,6 +643,7 @@ body.mobile * {
           .main-wrapper .section1 .content-wrapper .slide4 .text-wrapper .text-item .h1-title,
           .main-wrapper .section1 .content-wrapper .slide5 .text-wrapper .text-item .h1-title,
           .main-wrapper .section1 .content-wrapper .slide6 .text-wrapper .text-item .h1-title {
+            padding-top: 0px;
             max-width: 340px;
             color: #212121;
             font-family: "Montserrat-Medium";
@@ -832,9 +838,14 @@ body.mobile * {
       background: url("../../img/Space-back.png") no-repeat 50% 50%;
       background-size: contain;
       margin-right: -5%; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 520px) {
         .main-wrapper .section1 .content-wrapper .slide1 .tablet {
-          background-size: 90% auto; } }
+          min-height: 282px;
+          max-height: 282px; } }
+      @media screen and (max-width: 320px) {
+        .main-wrapper .section1 .content-wrapper .slide1 .tablet {
+          min-height: 200px;
+          max-height: 200px; } }
       .main-wrapper .section1 .content-wrapper .slide1 .tablet .top-bg-tablet {
         background: url("../../img/Space-top.png") no-repeat 50% 50%;
         position: absolute;
@@ -844,9 +855,14 @@ body.mobile * {
         width: 100%;
         background-size: contain;
         margin-right: 5%; }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 520px) {
           .main-wrapper .section1 .content-wrapper .slide1 .tablet .top-bg-tablet {
-            background-size: 90% auto; } }
+            min-height: 282px;
+            max-height: 282px; } }
+        @media screen and (max-width: 320px) {
+          .main-wrapper .section1 .content-wrapper .slide1 .tablet .top-bg-tablet {
+            min-height: 180px;
+            max-height: 180px; } }
     .main-wrapper .section1 .content-wrapper .slide2 .btn-wrapper {
       display: flex;
       flex-direction: row; }
@@ -905,12 +921,17 @@ body.mobile * {
       background-size: contain;
       margin-right: 0;
       min-height: 350px; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 520px) {
         .main-wrapper .section1 .content-wrapper .slide2 .tablet {
-          background-size: 90% auto; } }
+          min-height: 282px;
+          max-height: 282px; } }
+      @media screen and (max-width: 320px) {
+        .main-wrapper .section1 .content-wrapper .slide2 .tablet {
+          min-height: 180px;
+          max-height: 180px; } }
       .main-wrapper .section1 .content-wrapper .slide2 .tablet .top-bg-tablet {
         background: url("../../img/Trade-top.png") no-repeat 50% 50%;
-        position: inherit;
+        position: absolute;
         right: 0;
         min-height: 350px;
         max-height: 350px;
@@ -918,9 +939,14 @@ body.mobile * {
         height: 100%;
         background-size: contain;
         margin-right: -5%; }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 520px) {
           .main-wrapper .section1 .content-wrapper .slide2 .tablet .top-bg-tablet {
-            background-size: 90% auto; } }
+            min-height: 282px;
+            max-height: 282px; } }
+        @media screen and (max-width: 320px) {
+          .main-wrapper .section1 .content-wrapper .slide2 .tablet .top-bg-tablet {
+            min-height: 180px;
+            max-height: 180px; } }
     .main-wrapper .section1 .content-wrapper .slide3 .btn-wrapper {
       display: flex;
       flex-direction: row; }
@@ -976,9 +1002,14 @@ body.mobile * {
       background: url("../../img/Butler-back.png") no-repeat 50% 50%;
       background-size: contain;
       margin-right: -5%; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 520px) {
         .main-wrapper .section1 .content-wrapper .slide3 .tablet {
-          background-size: 90% auto; } }
+          min-height: 282px;
+          max-height: 282px; } }
+      @media screen and (max-width: 320px) {
+        .main-wrapper .section1 .content-wrapper .slide3 .tablet {
+          min-height: 180px;
+          max-height: 180px; } }
       .main-wrapper .section1 .content-wrapper .slide3 .tablet .top-bg-tablet {
         background: url("../../img/Butler-top.png") no-repeat 50% 50%;
         position: absolute;
@@ -989,9 +1020,14 @@ body.mobile * {
         width: 100%;
         background-size: contain;
         margin-right: 5%; }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 520px) {
           .main-wrapper .section1 .content-wrapper .slide3 .tablet .top-bg-tablet {
-            background-size: 90% auto; } }
+            min-height: 282px;
+            max-height: 282px; } }
+        @media screen and (max-width: 320px) {
+          .main-wrapper .section1 .content-wrapper .slide3 .tablet .top-bg-tablet {
+            min-height: 180px;
+            max-height: 180px; } }
     .main-wrapper .section1 .content-wrapper .slide4 .btn-wrapper {
       display: flex;
       flex-direction: row; }
@@ -1047,9 +1083,14 @@ body.mobile * {
       background: url("../../img/Pizza-back.png") no-repeat 50% 50%;
       background-size: contain;
       margin-right: 0; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 520px) {
         .main-wrapper .section1 .content-wrapper .slide4 .tablet {
-          background-size: 90% auto; } }
+          min-height: 282px;
+          max-height: 282px; } }
+      @media screen and (max-width: 320px) {
+        .main-wrapper .section1 .content-wrapper .slide4 .tablet {
+          min-height: 180px;
+          max-height: 180px; } }
       .main-wrapper .section1 .content-wrapper .slide4 .tablet .top-bg-tablet {
         background: url("../../img/Pizza-top.png") no-repeat 50% 50%;
         position: absolute;
@@ -1060,9 +1101,14 @@ body.mobile * {
         width: 100%;
         background-size: contain;
         margin-right: -5%; }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 520px) {
           .main-wrapper .section1 .content-wrapper .slide4 .tablet .top-bg-tablet {
-            background-size: 90% auto; } }
+            min-height: 282px;
+            max-height: 282px; } }
+        @media screen and (max-width: 320px) {
+          .main-wrapper .section1 .content-wrapper .slide4 .tablet .top-bg-tablet {
+            min-height: 180px;
+            max-height: 180px; } }
     .main-wrapper .section1 .content-wrapper .slide5 .btn-wrapper {
       display: flex;
       flex-direction: row; }
@@ -1118,9 +1164,14 @@ body.mobile * {
       background: url("../../img/Mario-back.png") no-repeat 50% 50%;
       background-size: contain;
       margin-right: -5%; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 520px) {
         .main-wrapper .section1 .content-wrapper .slide5 .tablet {
-          background-size: 90% auto; } }
+          min-height: 282px;
+          max-height: 282px; } }
+      @media screen and (max-width: 320px) {
+        .main-wrapper .section1 .content-wrapper .slide5 .tablet {
+          min-height: 180px;
+          max-height: 180px; } }
       .main-wrapper .section1 .content-wrapper .slide5 .tablet .top-bg-tablet {
         background: url("../../img/Mario-top.png") no-repeat 50% 50%;
         position: absolute;
@@ -1131,9 +1182,14 @@ body.mobile * {
         width: 100%;
         background-size: contain;
         margin-right: 5%; }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 520px) {
           .main-wrapper .section1 .content-wrapper .slide5 .tablet .top-bg-tablet {
-            background-size: 90% auto; } }
+            min-height: 282px;
+            max-height: 282px; } }
+        @media screen and (max-width: 320px) {
+          .main-wrapper .section1 .content-wrapper .slide5 .tablet .top-bg-tablet {
+            min-height: 180px;
+            max-height: 180px; } }
     .main-wrapper .section1 .content-wrapper .slide6 .btn-wrapper .next-btn svg {
       position: absolute;
       left: 20px; }
@@ -1172,9 +1228,14 @@ body.mobile * {
       background: url("../../img/Chucks-back.png") no-repeat 50% 50%;
       background-size: contain;
       margin-right: 0; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 520px) {
         .main-wrapper .section1 .content-wrapper .slide6 .tablet {
-          background-size: 90% auto; } }
+          min-height: 282px;
+          max-height: 282px; } }
+      @media screen and (max-width: 320px) {
+        .main-wrapper .section1 .content-wrapper .slide6 .tablet {
+          min-height: 180px;
+          max-height: 180px; } }
       .main-wrapper .section1 .content-wrapper .slide6 .tablet .top-bg-tablet {
         background: url("../../img/Chucks-top.png") no-repeat 50% 50%;
         position: absolute;
@@ -1185,9 +1246,14 @@ body.mobile * {
         width: 100%;
         background-size: contain;
         margin-right: -5%; }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 520px) {
           .main-wrapper .section1 .content-wrapper .slide6 .tablet .top-bg-tablet {
-            background-size: 90% auto; } }
+            min-height: 282px;
+            max-height: 282px; } }
+        @media screen and (max-width: 320px) {
+          .main-wrapper .section1 .content-wrapper .slide6 .tablet .top-bg-tablet {
+            min-height: 180px;
+            max-height: 180px; } }
     .main-wrapper .section1 .content-wrapper .slick-active .bg-object, .main-wrapper .section1 .content-wrapper .slick-active .main-object {
       transition: 1s;
       right: 0 !important; }
@@ -3183,6 +3249,8 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
+    .menu-mobile .header-block-menu .logo-mob {
+      z-index: 101; }
   .menu-mobile .center-block {
     width: 100%;
     margin-top: 5vh; }
@@ -3242,6 +3310,9 @@ body {
     @media screen and (max-width: 800px) {
       .first-screen .wave {
         max-height: 1000px; } }
+    @media screen and (max-width: 500px) {
+      .first-screen .wave {
+        max-height: 712px; } }
 
 .first-wave {
   background: url("../../img/wave-1.svg") no-repeat;
@@ -3267,7 +3338,7 @@ body {
 
 .section1-copy {
   position: fixed;
-  top: 92px;
+  top: 38px;
   width: 100%;
   z-index: 10; }
 
