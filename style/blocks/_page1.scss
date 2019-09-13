@@ -202,7 +202,8 @@
       .slide3,
       .slide4,
       .slide5,
-      .slide6 {
+      .slide6,
+      .slide7 {
         width: 100%;
         padding: 70px 0;
         min-height: 500px;
@@ -411,7 +412,7 @@
         max-height: 620px;
         width: 100%;
         max-width: 1660px;
-        top: 0;
+        top: 20px;
         bottom: 0;
         margin: auto;
         @media screen and (max-width: 1620px) {
@@ -954,12 +955,35 @@
       .slide6 {
 
         .btn-wrapper {
+          display: flex;
+          flex-direction: row;
+
           .next-btn {
+            width: 155px !important;
+
             svg {
               position: absolute;
-              left: 20px;
+              right: 20px;
             }
+          }
 
+          .prev-btn {
+            background-image: linear-gradient(0deg, rgb(0, 100, 170) 0%, rgb(0, 190, 255) 100%);
+            box-shadow: 0 9px 34px 0 rgba(5, 48, 95, 0.32);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+
+
+            &:hover {
+              background-image: none;
+              background-color: rgb(0, 100, 170);
+              box-shadow: 0px 4px 10px 0px rgba(5, 48, 95, 0.45);
+            }
           }
         }
 
@@ -1039,6 +1063,98 @@
 
       }
 
+      .slide7 {
+
+        .btn-wrapper {
+          .next-btn {
+            svg {
+              position: absolute;
+              left: 20px;
+            }
+
+          }
+        }
+
+        a:visited {
+          color: #0064aa;
+        }
+
+        .h1-title {
+          max-width: 360px !important;
+        }
+
+        .illustration-item .bg-object {
+          background: url(../../img/Reporter-back.png) no-repeat 50% 50%;
+          position: absolute;
+          right: -5%;
+        }
+
+        .illustration-item .main-object {
+          background: url(../../img/Reporter-top.png) no-repeat 50% 50%;
+          position: absolute;
+          right: 5%;
+        }
+
+        .illustration-item .bg-object, .illustration-item .main-object {
+          height: 100%;
+          float: right;
+          width: 800px;
+          background-size: contain;
+          @media screen and (max-width: 1620px) {
+            width: 700px;
+            height: 580px;
+          }
+          @media screen and (max-width: 1420px) {
+            width: 600px;
+            height: 580px;
+          }
+          @media screen and (max-width: 1200px) {
+            width: 440px;
+          }
+          @media screen and (max-width: 830px) {
+            background: none;
+            width: 0;
+            height: 0;
+          }
+        }
+
+        .tablet {
+          background: url("../../img/Reporter-back.png") no-repeat 50% 50%;
+          background-size: contain;
+          margin-right: -5%;
+          @media screen and (max-width: 520px) {
+            min-height: 282px;
+            max-height: 282px;      
+          }
+          @media screen and (max-width: 320px) {
+            min-height: 180px;
+            max-height: 180px;
+          }
+
+          .top-bg-tablet {
+            background: url("../../img/Reporter-top.png") no-repeat 50% 50%;
+            position: absolute;
+            right: 0;
+            min-height: 350px;
+            max-height: 350px;
+            height: 100%; 
+            width: 100%;   
+            background-size: contain;
+            margin-right: 5%;
+            @media screen and (max-width: 520px) {
+              min-height: 282px;
+              max-height: 282px;       
+            }
+            @media screen and (max-width: 320px) {
+              min-height: 180px;
+              max-height: 180px;
+            }
+          }
+
+        }
+
+      }
+
       .slick-active .bg-object, .slick-active .main-object {
         transition: 1s;
         right: 0 !important;
@@ -1056,14 +1172,16 @@
 
       .slide1 .slick-before-change .bg-object,
       .slide3 .slick-before-change .bg-object,
-      .slide5 .slick-before-change .bg-object {
+      .slide5 .slick-before-change .bg-object,
+      .slide7 .slick-before-change .bg-object {
         transition: 0.5s;
         right: -5% !important;
       }
 
       .slide1 .slick-before-change .main-object,
       .slide3 .slick-before-change .main-object,
-      .slide5 .slick-before-change .main-object {
+      .slide5 .slick-before-change .main-object,
+      .slide7 .slick-before-change .main-object {
         transition: 0.5s;
         right: 5% !important;
       }

@@ -144,6 +144,9 @@ $(document).ready(function () {
     $(".nav6").on("click", function () {
         $('.section1 .content-wrapper')[0].slick.slickGoTo(5);
     });
+    $(".nav7").on("click", function () {
+        $('.section1 .content-wrapper')[0].slick.slickGoTo(6);
+    });
 
 
     $(".mobile-menu_btn").on("click", function () {
