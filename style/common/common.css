@@ -376,12 +376,12 @@ body.mobile * {
       margin: 0 25px; }
       .header-wrapper .right-links .item a {
         text-decoration: none;
-        font-family: "Roboto-Regular";
+        font-family: "Montserrat-Regular";
         color: #0563A3;
         font-size: 16px;
         transition: color 0.2s ease; }
       .header-wrapper .right-links .item:hover a {
-        font-family: "Roboto-Medium"; }
+        font-family: "Montserrat-Medium"; }
     .header-wrapper .right-links .create-btn {
       margin: 0 0 0 25px;
       display: flex;
