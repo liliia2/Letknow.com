@@ -3794,6 +3794,38 @@ body {
       }
     }
 
+    .create-btn {
+      margin: 5vh auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 22px;
+      background-image: linear-gradient(180deg, #B4EC51 0%, #429321 100%);
+      box-shadow: 0 9px 34px 0 rgba(5,48,95,0.32);
+      width: 200px;
+      height: 44px;
+      font-family: $fontR_R;
+      font-size: 14px;
+      color: white;
+
+      &:hover {
+        font-family: $fontR_M;
+        text-decoration: none;
+        background-image: none;
+        background: #7ED321;
+        color: white;
+        box-shadow: 0 4px 10px 0 rgba(5,48,95,0.45);
+      }
+      
+      a {
+        text-decoration: none;
+        &:visited {
+          color: white;
+        }
+      }
+      
+    }
+
   }
 
   .footer {
