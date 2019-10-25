@@ -71,31 +71,37 @@
 
     .item {
       cursor: pointer;
-      margin: 0 25px;
+      margin: 0 15px;
 
       a {
         text-decoration: none;
-        font-family: $fontM_R;
-        color: #0563A3;
-        font-size: 16px;
+        font-family: $fontR_R;
+        color: #212121;
+        font-size: 14px;
         transition: color 0.2s ease;
       }
 
       &:hover {
         a {
-          font-family: $fontM_M;
+          font-family: $fontR_M;
+          color: #0064AA;
         }
       }
+
+      @media screen and(max-width: 961px) {
+        inline-size: min-content;
+      }
+
     }
 
     .create-btn {
-      margin: 0 0 0 25px;
+      margin: 0 15px 0 15px;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 22px;
-      background-image: linear-gradient(-181deg, rgb(0, 100, 170) 0%, rgb(0, 190, 255) 100%);
-      box-shadow: 0 9px 34px 0 rgba(5, 48, 95, 0.32);
+      background-image: linear-gradient(180deg, #B4EC51 0%, #429321 100%);
+      box-shadow: 0 9px 34px 0 rgba(5,48,95,0.32);
       width: 155px;
       height: 44px;
 
@@ -108,8 +114,8 @@
       &:hover {
         text-decoration: none;
         background-image: none;
-        background-color: rgb(0, 190, 255);
-        box-shadow: 0px 4px 10px 0px rgba(5, 48, 95, 0.45);
+        background: #7ED321;
+        box-shadow: 0 4px 10px 0 rgba(5,48,95,0.45);
       }
     }
   }
@@ -3526,6 +3532,42 @@
           }
         }
       }
+
+      .right {
+
+        display: flex;
+        align-self: flex-end;
+
+        @media screen and (max-width: 830px) {
+          align-self: flex-start;
+          margin-top: 30px;
+        }
+
+        .create-btn {
+          width: 158px;
+          height: 44px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 22px;
+          background-image: linear-gradient(181deg, #0064aa 0%, #00beff 250%);
+          box-shadow: 0 9px 34px 0 rgba(5, 48, 95, 0.32);
+          cursor: pointer;
+
+          p {
+            color: white;
+            font-size: 14px;
+            font-family: $fontR_M;
+          }
+
+          &:hover {
+            background-image: none;
+            background-color: #0064aa;
+            box-shadow: 0px 4px 10px 0px rgba(5, 48, 95, 0.45);
+          }
+        }
+      }
+      
     }
 }
 
