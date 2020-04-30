@@ -166,7 +166,6 @@ $(document).ready(function () {
 
     window.onscroll = function () {
         let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-        console.log(scrolled);
 
         if (scrolled >= 800) {
             $('.section1 .content-wrapper').slick('slickPause');
