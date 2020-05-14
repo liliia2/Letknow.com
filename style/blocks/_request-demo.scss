@@ -50,8 +50,9 @@
         font-size: 16px;
       }
 
-      span {
+      a, a:visited, a:hover, a:active {
         color: #0064aa;
+        text-decoration: none;
       }
     }
 

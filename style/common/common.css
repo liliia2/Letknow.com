@@ -3817,8 +3817,9 @@ body {
       @media screen and (max-width: 500px) {
         .request-demo .main-content-wrapper .reg-text {
           font-size: 16px; } }
-      .request-demo .main-content-wrapper .reg-text span {
-        color: #0064aa; }
+      .request-demo .main-content-wrapper .reg-text a, .request-demo .main-content-wrapper .reg-text a:visited, .request-demo .main-content-wrapper .reg-text a:hover, .request-demo .main-content-wrapper .reg-text a:active {
+        color: #0064aa;
+        text-decoration: none; }
     .request-demo .main-content-wrapper .form-block {
       margin-top: 28px;
       max-width: 725px;
